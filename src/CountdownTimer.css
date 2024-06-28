@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+
+body {
+    background-size: cover;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.countdown-container {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.countdown-heading {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vh;
+    animation: fadeIn 2s ease-in-out;
+    color: #274FB5;
+    text-align: center;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+
+.countdown-item {
+    background-color: rgba(159, 186, 202, 0.712);
+    padding: 20px;
+    border-radius: 5px;
+    animation: bounce 1s infinite;
+}
+
+.countdown-number {
+    font-size: 3em;
+    display: block;
+}
+
+.countdown-label {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.twitter-logo {
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.image img {
+    min-width: 15vw;
+    max-width: 30vw;
+    min-height: 15vh;
+    max-height: 30vh;
+}
+
+/* Responsive design for iPhone */
+@media (max-width: 768px) {
+    .countdown-container {
+        padding-top: 20%;
+    }
+
+    .countdown-heading {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    .countdown-item {
+        padding: 15px;
+    }
+
+    .countdown-number {
+        font-size: 2em;
+    }
+
+    .countdown-label {
+        font-size: 0.8em;
+    }
+
+    .image img {
+        min-width: 30vw;
+        max-width: 50vw;
+        min-height: 15vh;
+        max-height: 20vh;
+    }
+}
+
+/* Larger screens adjustments */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .countdown-heading {
+        font-size: 1.8em;
+        padding: 30px;
+    }
+
+    .countdown-item {
+        padding: 18px;
+    }
+
+    .countdown-number {
+        font-size: 2.5em;
+    }
+
+    .countdown-label {
+        font-size: 0.9em;
+    }
+
+    .image img {
+        min-width: 20vw;
+        max-width: 25vw;
+        min-height: 15vh;
+        max-height: 25vh;
+    }
+}
