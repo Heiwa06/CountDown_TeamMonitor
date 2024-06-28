@@ -43,7 +43,7 @@ const CountdownTimer = () => {
 
     return (
         <div className="countdown-container">
-            <div className="img">
+            <div className="image">
                 <img src={ProjectLogo} alt="Logo" />
             </div>
             <h3>Lost in the cosmos</h3>
